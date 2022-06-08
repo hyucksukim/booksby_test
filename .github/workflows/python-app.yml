@@ -15,7 +15,7 @@ env:
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
-    runs-on: ubuntu-latest
+    runs-on: Container-Optimized OS 97-16919.29.40 stable
 
     steps:
     - name: Checkout

@@ -30,8 +30,6 @@ jobs:
 
     # gcloud에서 Docker 사용할 수 있도록 설정
     - run: |-
-        Update gcloud auth for configure-docker
-    - run: |-
         gcloud --quiet auth configure-docker
     # Model 파일 복사
 #     - name: Copy model file

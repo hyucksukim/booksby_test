@@ -172,7 +172,7 @@ def get_item(asin):
 @app.get("/title/{asin}")
 def get_title(asin):
     items = get_item(asin)
-    return items[0]['title']
+    return 1 #items[0]['title']
 
 
 def quick_img(asin):

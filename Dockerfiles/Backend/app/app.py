@@ -159,7 +159,6 @@ def get_item(asin):
 @app.get("/title/{asin}")
 def get_title(asin):
     items = get_item(asin)
-    a = 2
     return items[0]['title']
     
     

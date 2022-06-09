@@ -222,6 +222,7 @@ def fsafa(user):
     db = client["amazon"]
     collection = db["train"]
     query = {"user":user}
+    aaaa = 1
     cursor = collection.delete_many(query)
 
 if __name__ == "__main__":

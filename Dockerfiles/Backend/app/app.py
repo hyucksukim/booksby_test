@@ -13,9 +13,9 @@ import requests
 import json
 import urllib
 
-from inference import load_model
-from recommenders.datasets.sparse import AffinityMatrix
-from recommenders.utils.python_utils import binarize
+#from inference import load_model
+#from recommenders.datasets.sparse import AffinityMatrix
+#from recommenders.utils.python_utils import binarize
 import pandas as pd
 import numpy as np
 import random
@@ -96,7 +96,7 @@ def getuserdata(user):
     cursor = collection.find(query, projection={'_id': 0, 'asin':1, 'reviewText':1, 'overall':1, 'title':1, 'startdate':1, 'enddate':1})
     result = loads(dumps(cursor))
     return result
-
+'''
 @app.get("/inference/{user}")
 def getpredict(user):
     time.sleep(0.1)
@@ -130,7 +130,8 @@ def getpredict(user):
     top_k_df = am_inference.map_back_sparse(top_k, kind='prediction')
 
     return list(top_k_df['itemID'].values)
-    
+'''
+
 li = []
 class Inter(BaseModel):
     id: str

@@ -389,6 +389,5 @@ def fsafa(user):
     collection = db["train"]
 
     query = {"user":user}
-    aaaa=1
 
     cursor = collection.delete_many(query)
